@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp8.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp8"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="200" Width="300">
+    <Grid>
+        <Menu>
+            <MenuItem Header="Cadastros">
+                <MenuItem Header="Veiculos" Click="Veiculo_Click" />
+                <MenuItem Header="Modelo" Click="Modelo_Click" />
+            </MenuItem>
+            <MenuItem Header="Operações">
+                <MenuItem Header="Modelo" Click="Matricula_Click" />
+                <MenuItem Header="Veiculos Registrados" Click="Registrados_Click" />
+            </MenuItem>
+        </Menu>
+        <Button Visibility="Hidden" Click="Veiculo_Click" Content="Veiculo" HorizontalAlignment="Left" Margin="23,19,0,0" VerticalAlignment="Top"/>
+        <Button Visibility="Hidden" Click="Modelo_Click" Content="Modelo" HorizontalAlignment="Left" Margin="23,44,0,0" VerticalAlignment="Top"/>
+        <Button Visibility="Hidden" Click="CadastroVeiculo_Click" Content="Cadastrar Modelos no Veiculo" HorizontalAlignment="Left" Margin="23,69,0,0" VerticalAlignment="Top"/>
+        <Button Visibility="Hidden" Click="Registrados_Click" Content="Registrados" HorizontalAlignment="Left" Margin="23,94,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
